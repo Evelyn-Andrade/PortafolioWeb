@@ -1,79 +1,206 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
-    <title>Inicio | Sofia Andrade</title>
-
-    <meta name="description" content="Portafolio profesional de Evelyn Sofía Andrade Luna, estudiante de Ingenieria en Sistemas de cuarto año, donde comparte proyectos y aprendizaje en desarrollo web.">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Portafolio de Evelyn Sofia Andrade Luna">
-    <meta property="og:description" content="Conoce mis proyectos, practicas y aprendizaje como estudiante de Ingenieria en Sistemas.">
-    <meta property="og:image" content="foto.jpg">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofía Andrade | Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/34180b1f62.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
 
     <header>
-
-        <h1>Portafolio Profesional</h1>
-
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+        <nav id="navbar" aria-label="Navegación principal">
+            <div class="logo">Sofía <span>Andrade</span></div>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#quien-soy">QUIÉN SOY</a></li>
+                <li><a href="#herramientas">HERRAMIENTAS</a></li>
+                <li><a href="#certificados">CERTIFICADOS</a></li>
+                <li><a href="#proyectos">PROYECTOS</a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
 
-        <section>
-
-            <h2>Sobre mi</h2>
-
-            <p>
-                Mi nombre es Evelyn Sofia Andrade Luna. Soy estudiante de Ingeniería en Sistemas
-                y actualmente curso el cuarto año de la carrera.
-            </p>
-
-            <img src="foto.jpg" alt="Foto de Evelyn Sofia Andrade Luna" width="100" height="100">
-
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="portafolio-label">— PORTAFOLIO PROFESIONAL —</p>
+                    <h1>Evelyn Sofía<br>Andrade Luna</h1>
+                    <p class="carrera">Ingeniería en Sistemas · 8vo Semestre</p>
+                    <p class="universidad">Universidad Mariano Gálvez de Guatemala</p>
+                    <p class="frase">"Construyendo soluciones que trascienden — del código a la realidad."</p>
+                    <div class="social-links">
+                        <a href="mailto:esofiaand04@gmail.com" class="btn-social" aria-label="Enviar correo a Sofía">
+                            <i class="fa-regular fa-envelope" aria-hidden="true"></i> Correo
+                        </a>
+                        <a href="https://linkedin.com/in/evelyn-sofía-andrade-luna-565463416" target="_blank" class="btn-social" aria-label="Ver perfil de LinkedIn de Sofía">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/Evelyn-Andrade" target="_blank" class="btn-social" aria-label="Ver perfil de GitHub de Sofía">
+                            <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="foinicio.jpeg" alt="Ilustración de astronauta leyendo entre estrellas">
+                </div>
+            </div>
         </section>
 
-        <section>
-
-            <h2>Mis proyectos</h2>
-
-            <p>
-                En este portafolio publicare los proyectos que realice durante mi formacion
-                universitaria en Desarrollo Web y otras areas de la carrera.
-            </p>
-
+        <section id="quien-soy">
+            <div class="about-content">
+                <div class="section-number">01</div>
+                <div class="about-text">
+                    <h2 class="section-title">Quién Soy</h2>
+                    <div class="title-line"></div>
+                    <p>
+                        Soy Evelyn Sofía Andrade Luna, estudiante de Ingeniería en Sistemas
+                        en 8° semestre en la Universidad Mariano Gálvez de Guatemala.
+                        A lo largo de mi formación he desarrollado proyectos que van desde
+                        sistemas de gestión empresarial hasta robótica con Arduino, siempre
+                        con enfoque en resolver problemas reales con tecnología funcional
+                        y bien estructurada.
+                    </p>
+                    <p>
+                        Me apasiona diseñar soluciones que no solo funcionen, sino que sean
+                        accesibles, escalables y de impacto. Trabajo con múltiples lenguajes
+                        y entornos de desarrollo, lo que me permite adaptarme con rapidez
+                        a distintos contextos y equipos.
+                    </p>
+                    <p>
+                        Estoy en la etapa final de mi carrera y lista para aportar valor real
+                        en el entorno profesional. Si buscas a alguien comprometida,
+                        técnicamente sólida y con hambre de aprender,
+                        <a href="mailto:esofiaand04@gmail.com" class="link-hablemos">hablemos.</a>
+                    </p>
+                    <div class="social-links">
+                        <a href="mailto:esofiaand04@gmail.com" class="btn-social" aria-label="Enviar correo a Sofía">
+                            <i class="fa-regular fa-envelope" aria-hidden="true"></i> Correo
+                        </a>
+                        <a href="#" target="_blank" class="btn-social" aria-label="Ver perfil de LinkedIn de Sofía">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+                        </a>
+                        <a href="#" target="_blank" class="btn-social" aria-label="Ver perfil de GitHub de Sofía">
+                            <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <br> <input type="submit" value="CORREO"/>
+        <section id="herramientas">
+            <div class="tools-content">
+                <div class="section-number">02</div>
+                <h2 class="section-title">Herramientas</h2>
+                <div class="title-line"></div>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <img src="https://www.sommelierdecafe.com/wp-content/uploads/2009/06/java-logo1-1.png" alt="Logo de Java">
+                        <h3>Java</h3>
+                    </div>
+                    <div class="tool-card">
+                        <img src="https://e7.pngegg.com/pngimages/328/221/png-clipart-c-programming-language-logo-microsoft-visual-studio-net-framework-javascript-icon-purple-logo.png" alt="Logo de C#">
+                        <h3>C#</h3>
+                    </div>
+                    <div class="tool-card">
+                        <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHM0OYfiFeMI2p9MWie0CvL99U4GA1gf6_kayTt_kBblFwHwo8BW8JXlqfnYxKPmmBQk4Fgd0cYavEztNLFcVkRBRvOZ40AdH17uQXVRXdtvNuXjTF6d4SVvTokMOzHlFurktQtIwTW_ULiDeOD9ge8Q-&format=source" alt="Logo de Visual Studio">
+                        <h3>Visual Studio</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="certificados">
+            <div class="certs-content">
+                <div class="section-number">03</div>
+                <h2 class="section-title">Certificados</h2>
+                <div class="title-line"></div>
+                <p class="coming-soon">Próximamente...</p>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <div class="projects-content">
+                <div class="section-number">04</div>
+                <h2 class="section-title">Proyectos</h2>
+                <div class="title-line"></div>
+                <p class="projects-subtitle">"Soluciones reales, construidas con propósito"</p>
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <div class="project-img">
+                            <img src="img/wally.png" alt="Foto del robot WALL-E construido con Arduino">
+                        </div>
+                        <div class="project-info">
+                            <h3>WALL-E Robot</h3>
+                            <div class="project-tags">
+                                <span class="tag">Arduino</span>
+                                <span class="tag">C++ Embebido</span>
+                                <span class="tag">Hardware</span>
+                            </div>
+                            <p>Robot autónomo inspirado en WALL-E construido con Arduino. Integra sensor ultrasónico, matriz de LEDs y pantalla LCD con mensajes dinámicos.</p>
+                            <a href="#" class="btn-project" aria-label="Ver más sobre el proyecto WALL-E Robot">VER MÁS →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-img">
+                            <img src="img/ventas.jpeg" alt="Captura de pantalla del Sistema de Gestión de Ventas">
+                        </div>
+                        <div class="project-info">
+                            <h3>Sistema de Gestión de Ventas</h3>
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Desktop App</span>
+                                <span class="tag">Base de Datos</span>
+                            </div>
+                            <p>Sistema de escritorio en Java para gestión integral de ventas y cuentas por cobrar. Módulos de catálogos, procesos y reportes.</p>
+                            <a href="#" class="btn-project" aria-label="Ver proyecto Sistema de Gestión de Ventas">VER PROYECTO →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-img">
+                            <img src="img/popflix.jpeg" alt="Captura de pantalla de la aplicación PopFlix">
+                        </div>
+                        <div class="project-info">
+                            <h3>PopFlix</h3>
+                            <div class="project-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">.NET</span>
+                                <span class="tag">Desktop App</span>
+                            </div>
+                            <p>Aplicación en C# para gestión completa de videoteca. Clientes, membresías, inventario, rentas y facturación de moras.</p>
+                            <a href="#" class="btn-project" aria-label="Ver proyecto PopFlix">VER PROYECTO →</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    <footer>
-
-      <br><center><p>© 2026 Evelyn Sofía Andrade Luna</p></center>  
-
-    </footer>
-
-    <!-- Mi comentario -->
-
     <script>
-        console.log("Hola Mundo");
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', function() {
+            navLinks.classList.toggle('nav-open');
+            hamburger.classList.toggle('active');
+        });
     </script>
 
 </body>
-
 </html>
